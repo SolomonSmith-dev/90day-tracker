@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "partner_1": "Russ Mayfield",
+      "partner_2": "Paola Mayfield",
+      "season": "90 Day Fiancé - Season 1",
+      "show": "90 Day Fiancé",
+      "status": "together",
+      "notes": "Russ was an engineer but gave up his job shortly after marrying. Paola moved to Miami to pursue modeling and personal training. They have one son, born in 2019. As of April 2021, Paola has dual citizenship.",
+      "image": "https://example.com/russAndpaola.jpg",
+      "current_partner_1": null,
+      "current_partner_2": null
+    },
+    {
+      "id": 2,
+      "partner_1": "Alan Cox",
+      "partner_2": "Kirlyam Cox",
+      "season": "90 Day Fiancé - Season 1",
+      "show": "90 Day Fiancé",
+      "status": "together",
+      "notes": "Met during Alan's missionary trip in Brazil. Kirlyam tried modeling, but Alan had concerns due to his Mormon values. They married in a Mormon temple while Kirlyam's family watched via livestream. They have two children.",
+      "image": "https://example.com/alan-kiryam.jpg",
+      "current_partner_1": null,
+      "current_partner_2": null
+    }
+  ]
+  
