@@ -1,27 +1,51 @@
-[
-    {
-      "id": 1,
-      "partner_1": "Russ Mayfield",
-      "partner_2": "Paola Mayfield",
-      "season": "90 Day Fiancé - Season 1",
-      "show": "90 Day Fiancé",
-      "status": "together",
-      "notes": "Russ was an engineer but gave up his job shortly after marrying. Paola moved to Miami to pursue modeling and personal training. They have one son, born in 2019. As of April 2021, Paola has dual citizenship.",
-      "image": "https://example.com/russAndpaola.jpg",
-      "current_partner_1": null,
-      "current_partner_2": null
-    },
-    {
-      "id": 2,
-      "partner_1": "Alan Cox",
-      "partner_2": "Kirlyam Cox",
-      "season": "90 Day Fiancé - Season 1",
-      "show": "90 Day Fiancé",
-      "status": "together",
-      "notes": "Met during Alan's missionary trip in Brazil. Kirlyam tried modeling, but Alan had concerns due to his Mormon values. They married in a Mormon temple while Kirlyam's family watched via livestream. They have two children.",
-      "image": "https://example.com/alan-kiryam.jpg",
-      "current_partner_1": null,
-      "current_partner_2": null
-    }
-  ]
+{
+    "seasons": [
+      {
+        "season": "90 Day Fiancé - Season 1",
+        "show": "90 Day Fiancé",
+        "couples": [
+          {
+            "id": 1,
+            "partner_1": "Russ Mayfield",
+            "partner_2": "Paola Mayfield",
+            "status": "together",
+            "notes": "Russ was an engineer but gave up his job shortly after marrying. Paola moved to Miami to pursue modeling and personal training. They have one son, born in 2019. As of April 2021, Paola has dual citizenship.",
+            "image": "https://example.com/russAndpaola.jpg",
+            "current_partner_1": null,
+            "current_partner_2": null
+          },
+          {
+            "id": 2,
+            "partner_1": "Alan Cox",
+            "partner_2": "Kirlyam Cox",
+            "status": "together",
+            "notes": "Met during Alan's missionary trip in Brazil. Kirlyam tried modeling, but Alan had concerns due to his Mormon values. They married in a Mormon temple while Kirlyam's family watched via livestream. They have two children.",
+            "image": "https://example.com/alan-kiryam.jpg",
+            "current_partner_1": null,
+            "current_partner_2": null
+          },
+          {
+            "id": 3,
+            "partner_1": "Louis Roy Gattone, Jr.",
+            "partner_2": "Aya",
+            "status": "together",
+            "notes": "Louis and Aya met via an online dating service. Aya wanted Louis to move to the Philippines but they decided she would move to the United States because he had two young sons. The two married in a Catholic church.",
+            "image": "https://example.com/louis-aya.jpg",
+            "current_partner_1": null,
+            "current_partner_2": null
+          },
+          {
+            "id": 4,
+            "partner_1": "Mike Eloshwayr",
+            "partner_2": "Aziza Eloshwayr",
+            "status": "together",
+            "notes": "Mike and Aziza met on a language acquisition website and Aziza moved to the United States in 2013 to live with Mike. Her family was unable to attend the wedding but they traveled to Russia afterward to see them.",
+            "image": "https://example.com/mike-aziza.jpg",
+            "current_partner_1": null,
+            "current_partner_2": null
+          }
+        ]
+      }
+    ]
+  }
   

@@ -1,32 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>90 Day Fiancé Tracker</title>
-</head>
-<body>
-    <h1>🧡 90 Day Fiancé Couples Tracker</h1>
+{% for season in seasons %}
+  <h2>{{ season.season }}</h2>
+  <div>
+    {% for couple in season.couples %}
+      <div style="margin-bottom: 25px;">
+        <h3>{{ couple.partner_1 }} & {{ couple.partner_2 }}</h3>
+        <p><strong>Status:</strong> {{ couple.status }}</p>
+        <p><strong>Notes:</strong> {{ couple.notes }}</p>
 
-    {% for couple in couples %}
-        <div style="margin-bottom: 30px;">
-            <h2>{{ couple.partner_1 }} & {{ couple.partner_2 }}</h2>
-            <p><strong>Show:</strong> {{ couple.show }}</p>
-            <p><strong>Season:</strong> {{ couple.season }}</p>
-            <p><strong>Status:</strong> {{ couple.status }}</p>
-            <p><strong>Notes:</strong> {{ couple.notes }}</p>
+        {% if couple.current_partner_1 %}
+          <p><strong>{{ couple.partner_1 }}'s current partner:</strong> {{ couple.current_partner_1 }}</p>
+        {% endif %}
+        {% if couple.current_partner_2 %}
+          <p><strong>{{ couple.partner_2 }}'s current partner:</strong> {{ couple.current_partner_2 }}</p>
+        {% endif %}
 
-            {% if couple.current_partner_1 %}
-                <p><strong>{{ couple.partner_1 }}’s current partner:</strong> {{ couple.current_partner_1 }}</p>
-            {% endif %}
-            {% if couple.current_partner_2 %}
-                <p><strong>{{ couple.partner_2 }}’s current partner:</strong> {{ couple.current_partner_2 }}</p>
-            {% endif %}
-
-            {% if couple.image %}
-                <img src="{{ couple.image }}" alt="Photo of {{ couple.partner_1 }} and {{ couple.partner_2 }}" width="300">
-            {% endif %}
-        </div>
-        <hr>
+        {% if couple.image %}
+          <img src="{{ couple.image }}" alt="Photo of {{ couple.partner_1 }} and {{ couple.partner_2 }}" width="300">
+        {% endif %}
+      </div>
+      <hr>
     {% endfor %}
-</body>
-</html>
+  </div>
+{% endfor %}

@@ -9,14 +9,24 @@ def load_couples():
 
 @app.route("/")
 def home():
-    couples = load_couples()
-    return render_template("index.html", couples=couples)
-@app.route("/status/<status_filter>")
+    data = load_couples()
+    seasons = data["seasons"]
+    return render_template("index.html", seasons=seasons)
 
+@app.route("/status/<status_filter>")
 def filter_by_status(status_filter):
-    couples = load_couples()
-    filtered = [c for c in couples if c["status"].lower() == status_filter.lower()]
-    return render_template("index.html", couples=filtered)
+    data = load_couples()
+    # Flatten all couples into one list for status filtering
+    all_couples = []
+    for season in data["seasons"]:
+        for couple in season["couples"]:
+            if couple["status"].lower() == status_filter.lower():
+                all_couples.append(couple)
+    return render_template("index.html", seasons=[{
+        "season": f"Filtered: {status_filter.title()}",
+        "show": "All Shows",
+        "couples": all_couples
+    }])
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="127.0.0.1", port=5000, debug=True)
